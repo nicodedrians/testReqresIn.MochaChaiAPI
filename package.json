@@ -1,0 +1,30 @@
+{
+  "name": "testreqresin.mochachaiapi",
+  "version": "1.0.0",
+  "description": "Reqres.in Mocha Chai Test",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "assert" : "mocha test/api/chaiAssert.js",
+    "get request" : "mocha test/api/GetReqresIn.js",
+    "post request" : "mocha test/api/PostReqresIn.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicodedrians/testReqresIn.MochaChaiAPI.git"
+  },
+  "author": "nico",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicodedrians/testReqresIn.MochaChaiAPI/issues"
+  },
+  "homepage": "https://github.com/nicodedrians/testReqresIn.MochaChaiAPI#readme",
+  "dependencies": {
+    "chai": "^4.3.9",
+    "mocha": "^10.2.0",
+    "supertest": "^6.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.0"
+  }
+}
