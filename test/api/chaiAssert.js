@@ -12,6 +12,10 @@ describe('Post Create User', () => {
     it('response status', async() => {
         expect((await response).status).to.equal(201)
     })
+
+    it('response body', async() => {
+        expect((await response).body).to.haveOwnProperty('name')
+    })
 })
 
 describe('Post Register User - Successful', () =>{
@@ -21,5 +25,33 @@ describe('Post Register User - Successful', () =>{
 
     it('response status', async() =>{
         expect((await response).status).to.equal(200)
+    })
+
+    it('response body', async() => {
+        expect((await response).body).to.haveOwnProperty('id')
+        expect((await response).body).to.haveOwnProperty('token')
+    })
+})
+
+describe('Get Single User by ID', () => {
+    const response = request(baseUrl())
+    .get(endPoint.GET_SINGLE_USER)
+
+    it('response status', async() => {
+        expect((await response).status).to.equal(200)
+    })
+})
+
+describe('Get Single Source', () => {
+    const response = request(baseUrl())
+    .get(endPoint.GET_SINGLE_RESOURCE)
+
+    it('response status', async() => {
+        expect((await response).status).to.equal(200)
+    })
+
+    it('response body', async() => {
+        expect((await response).body).to.haveOwnProperty('data')
+        expect((await response).body).to.haveOwnProperty('support')
     })
 })

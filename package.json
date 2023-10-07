@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "assert" : "mocha test/api/chaiAssert.js",
-    "get request" : "mocha test/api/GetReqresIn.js",
-    "post request" : "mocha test/api/PostReqresIn.js"
+    "assert": "mocha test/api/chaiAssert.js",
+    "get request": "mocha test/api/GetReqresIn.js",
+    "post request": "mocha test/api/PostReqresIn.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
   "dependencies": {
     "chai": "^4.3.9",
     "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3",
     "supertest": "^6.3.3"
   },
   "devDependencies": {

@@ -1,0 +1,274 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-09-30T14:17:25.927Z",
+    "end": "2023-09-30T14:17:27.259Z",
+    "duration": 1332,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "cacdc831-bc01-4f14-ac19-8ddedba2a274",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6b3d4e22-a6e1-4e18-8b1a-2c285bc8f4ba",
+          "title": "Post Create User",
+          "fullFile": "C:\\Users\\nicos\\OneDrive\\Dokumen\\Nicolaskitmen\\GIT\\testReqresIn.MochaChaiAPI\\test\\api\\chaiAssert.js",
+          "file": "\\test\\api\\chaiAssert.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "response status",
+              "fullTitle": "Post Create User response status",
+              "timedOut": false,
+              "duration": 616,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect((await response).status).to.equal(201)",
+              "err": {},
+              "uuid": "27b13b0d-4e02-483f-a29f-cbb1b6a085a7",
+              "parentUUID": "6b3d4e22-a6e1-4e18-8b1a-2c285bc8f4ba",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "response body",
+              "fullTitle": "Post Create User response body",
+              "timedOut": false,
+              "duration": 2,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect((await response).body).to.haveOwnProperty('name')",
+              "err": {},
+              "uuid": "a9e5e5fe-a628-42a9-acf0-86a438675f93",
+              "parentUUID": "6b3d4e22-a6e1-4e18-8b1a-2c285bc8f4ba",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "27b13b0d-4e02-483f-a29f-cbb1b6a085a7",
+            "a9e5e5fe-a628-42a9-acf0-86a438675f93"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 618,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "d9c24916-aba1-4b6b-95c2-fb2fb36348ce",
+          "title": "Post Register User - Successful",
+          "fullFile": "C:\\Users\\nicos\\OneDrive\\Dokumen\\Nicolaskitmen\\GIT\\testReqresIn.MochaChaiAPI\\test\\api\\chaiAssert.js",
+          "file": "\\test\\api\\chaiAssert.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "response status",
+              "fullTitle": "Post Register User - Successful response status",
+              "timedOut": false,
+              "duration": 450,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect((await response).status).to.equal(200)",
+              "err": {},
+              "uuid": "71fc9918-3067-4033-85b3-1eb7982f1b79",
+              "parentUUID": "d9c24916-aba1-4b6b-95c2-fb2fb36348ce",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "response body",
+              "fullTitle": "Post Register User - Successful response body",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect((await response).body).to.haveOwnProperty('id')\nexpect((await response).body).to.haveOwnProperty('token')",
+              "err": {},
+              "uuid": "833314e0-66a6-4e13-bf2b-7b010ab34317",
+              "parentUUID": "d9c24916-aba1-4b6b-95c2-fb2fb36348ce",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "71fc9918-3067-4033-85b3-1eb7982f1b79",
+            "833314e0-66a6-4e13-bf2b-7b010ab34317"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 451,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "58d0d256-a471-4c37-9745-9ef5e4b4bb02",
+          "title": "Get Single User by ID",
+          "fullFile": "C:\\Users\\nicos\\OneDrive\\Dokumen\\Nicolaskitmen\\GIT\\testReqresIn.MochaChaiAPI\\test\\api\\chaiAssert.js",
+          "file": "\\test\\api\\chaiAssert.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "response status",
+              "fullTitle": "Get Single User by ID response status",
+              "timedOut": false,
+              "duration": 119,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect((await response).status).to.equal(200)",
+              "err": {},
+              "uuid": "5e21c880-bb75-4ff4-ac9b-f36eacbac60c",
+              "parentUUID": "58d0d256-a471-4c37-9745-9ef5e4b4bb02",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5e21c880-bb75-4ff4-ac9b-f36eacbac60c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 119,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "f4a091bc-4f56-4288-b6bc-0cc4317369eb",
+          "title": "Get Single Source",
+          "fullFile": "C:\\Users\\nicos\\OneDrive\\Dokumen\\Nicolaskitmen\\GIT\\testReqresIn.MochaChaiAPI\\test\\api\\chaiAssert.js",
+          "file": "\\test\\api\\chaiAssert.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "response status",
+              "fullTitle": "Get Single Source response status",
+              "timedOut": false,
+              "duration": 121,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect((await response).status).to.equal(200)",
+              "err": {},
+              "uuid": "2126d70d-6dd0-46cb-bd73-aa1746c19797",
+              "parentUUID": "f4a091bc-4f56-4288-b6bc-0cc4317369eb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "response body",
+              "fullTitle": "Get Single Source response body",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect((await response).body).to.haveOwnProperty('data')\nexpect((await response).body).to.haveOwnProperty('support')",
+              "err": {},
+              "uuid": "a46d91a7-02c6-48bb-9ab1-1648b4329924",
+              "parentUUID": "f4a091bc-4f56-4288-b6bc-0cc4317369eb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2126d70d-6dd0-46cb-bd73-aa1746c19797",
+            "a46d91a7-02c6-48bb-9ab1-1648b4329924"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 121,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
